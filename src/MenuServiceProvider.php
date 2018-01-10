@@ -19,7 +19,7 @@ class MenuServiceProvider extends ServiceProvider
     {
         $routeServiceProvider = new RouteServiceProvider(ServiceProvider::class);
         $routeServiceProvider->map();
-        $this->loadMigrationsFrom(base_path('packages/alexstorm13/menu/database/migrations'));
+        $this->loadMigrationsFrom(base_path('packages/alexstorm13/zeus-menucard/database/migrations'));
     }
 
     /**

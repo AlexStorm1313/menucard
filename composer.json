@@ -1,28 +1,26 @@
 {
-    "name": "alexstorm13/menu",
-    "description": "This is a menu package",
-    "type": "project",
-    "license": "GNU",
-    "authors": [
-        {
-            "name": "Alex Brasser",
-            "email": "alexbrasser@gmail.com"
-        }
-    ],
-    "require": {},
-    "autoload": {
-        "psr-4": {
-            "Alexstorm13\\Menu\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Alexstorm13\\Menu\\MenuServiceProvider"
-            ],
-            "aliases": {
-                "Menu": "Alexstorm13\\Menu\\MenuFacade"
-            }
-        }
+  "name": "alexstorm13/zeus-menucard",
+  "description": "This is a menucard package for zeus",
+  "license": "GNU",
+  "authors": [
+    {
+      "name": "Alex Brasser",
+      "email": "alexbrasser@gmail.com"
     }
+  ],
+  "require": {
+    "laravel/passport": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alexstorm13\\Menu\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Alexstorm13\\Menu\\MenuServiceProvider"
+      ]
+    }
+  }
 }

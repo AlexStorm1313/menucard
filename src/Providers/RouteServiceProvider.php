@@ -72,6 +72,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::prefix('api')
              ->middleware('api')
              ->namespace($this->namespace)
-             ->group(base_path('packages/alexstorm13/menu/routes/api.php'));
+             ->group(base_path('packages/alexstorm13/zeus-menucard/routes/api.php'));
     }
 }
