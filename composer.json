@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "laravel/passport": "*"
+
   },
   "autoload": {
     "psr-4": {
