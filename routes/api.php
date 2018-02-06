@@ -28,9 +28,10 @@ Route::group(['middleware' => ['auth:api'], 'prefix' => 'menu'], function () {
         Route::patch('syncCategory', 'MenuController@syncCategory')->name('syncCategory');
     });
 });
+Route::get('menu/getWithRelations', 'MenuController@getWithRelations')->name('getWithRelations');
 
 Route::group(['middleware' => ['client'], 'prefix' => 'menu'], function () {
-    Route::get('getWithRelations', 'MenuController@getWithRelations')->name('getWithRelations');
+    //Route::get('getWithRelations', 'MenuController@getWithRelations')->name('getWithRelations');
 });
 
 /*

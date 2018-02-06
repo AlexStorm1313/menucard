@@ -23,7 +23,7 @@ class Dish extends Model
      * @var array
      */
     protected $hidden = [
-        'created_at', 'updated_at','pivot'
+        'created_at', 'updated_at'
     ];
 
     public static function validate($dish)
@@ -37,7 +37,7 @@ class Dish extends Model
 
     public function categories()
     {
-        return $this->belongsToMany('Alexstorm13\Menu\Category');
+        return $this->belongsToMany('Alexstorm13\Menu\Category')->withPivot('index');
     }
 
     public function attachCategory($categoryId)
